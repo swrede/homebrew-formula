@@ -2,7 +2,7 @@ Biorob's Homebrew  Formula Repository
 =====================================
 
 
-This repository just contains Homebrew formula for open source Software used or developped at [Biorob][http://biorob.epfl.ch]
+This repository just contains Homebrew formula for open source Software used or developped at [Biorob](http://biorob.epfl.ch).
 
 How do I install these formula?
 --------------------------------
@@ -18,4 +18,4 @@ You can also install via URL:
 
 Docs
 ----
-`brew help`, `man brew`, or the Homebrew [wiki][].
+`brew help`, `man brew`, or the Homebrew [wiki](https://github.com/mxcl/homebrew/wiki).
