@@ -5,8 +5,8 @@ require 'formula'
 
 class BiorobCpp < Formula
   homepage 'https://ponyo.epfl.ch/redmine/projects/biorob-cpp'
-  url 'https://ponyo.epfl.ch/git/biorob-cpp.git' , :using => :git, :revision => "c079cc14ea0bd66bcc4db897a3903563a7204512"
-  version '0.1.1'
+  url 'https://ponyo.epfl.ch/git/biorob-cpp.git' , :using => :git, :revision => "cb62c171ec1d71acd36b62ca77f27d371fb5f22e"
+  version '0.2.0'
 
   depends_on 'cmake' => :build
   depends_on 'biorob-cmake-utils' => :build
