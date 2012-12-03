@@ -3,8 +3,8 @@ require 'formula'
 
 class BiorobCmakeUtils < Formula
   homepage 'https://ponyo.epfl.ch/redmine/projects/biorob-cmake-utils.cmake'
-  url 'https://ponyo.epfl.ch/git/biorob-cmake-utils.git', :using => :git, :revision => "1b6f2878f58d0450e54b405fd2569c1114f8d40b"
-  version '0.3.2'
+  url 'https://ponyo.epfl.ch/git/biorob-cmake-utils.git', :using => :git, :revision => "b0fe50812b5fc0b1796d5d091c13a468626f4419"
+  version '0.3.3'
 
   depends_on 'cmake' => :build
 
