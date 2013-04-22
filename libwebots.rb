@@ -2,9 +2,9 @@ require 'formula'
 
 
 class Libwebots < Formula
-	version '0.2.3'
+	version '0.3.0'
 	homepage 'https://ponyo.epfl.ch/gitlab/webots/libwebots'
-	url 'https://ponyo.epfl.ch/gitlab/webots/libwebots.git', :using => :git	, :commit => 'e81e755ca8b5a6984ee8801fff3b3cbd3961162e'
+	url 'https://ponyo.epfl.ch/gitlab/webots/libwebots.git', :using => :git	, :commit => '9dbb7dc903ed9973faceb3dbce4f20a1eb2ab371'
 
 
 	depends_on 'cmake' => :build
