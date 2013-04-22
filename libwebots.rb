@@ -3,8 +3,8 @@ require 'formula'
 
 class Libwebots < Formula
 	version '0.2.3'
-	homepage 'https://ponyo.epfl.ch/redmine/projects/libwebots'
-	url 'https://ponyo.epfl.ch/cgit/index.cgi/webots/libwebots.git', :using => :git	, :commit => 'e81e755ca8b5a6984ee8801fff3b3cbd3961162e'
+	homepage 'https://ponyo.epfl.ch/gitlab/webots/libwebots'
+	url 'https://ponyo.epfl.ch/gitlab/webots/libwebots.git', :using => :git	, :commit => 'e81e755ca8b5a6984ee8801fff3b3cbd3961162e'
 
 
 	depends_on 'cmake' => :build
