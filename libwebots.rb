@@ -5,13 +5,13 @@ class Libwebots < Formula
 	version '0.3.0'
 	homepage 'https://ponyo.epfl.ch/gitlab/webots/libwebots'
 	url 'https://ponyo.epfl.ch/gitlab/webots/libwebots.git', :using => :git	, :commit => '9dbb7dc903ed9973faceb3dbce4f20a1eb2ab371'
+	head 'https://ponyo.epfl.ch/gitlab/webots/libwebots.git', :using => :git
 
+	option :universal
 
 	depends_on 'cmake' => :build
 	depends_on  'eigen'
 	depends_on 'protobuf'
-
-
 
 	def test_webots_presence
 		possible_location = [ENV["WEBOTS_HOME_PATH"],ENV["WEBOTS_HOME"],"/Applications/Webots"]
@@ -45,6 +45,7 @@ EOS
 
 	def install
 		test_webots_presence
+		ENV.universal_binary if build.universal?
 
 		system "cmake", ".", *std_cmake_args
 		system "make install"
