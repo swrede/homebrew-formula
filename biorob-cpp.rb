@@ -3,8 +3,8 @@ require 'formula'
 class BiorobCpp < Formula
   homepage 'https://ponyo.epfl.ch/gitlab/core/projects/biorob-cpp'
   head 'https://ponyo.epfl.ch/gitlab/core/biorob-cpp.git' , :using => :git
-  url 'https://ponyo.epfl.ch/gitlab/core/biorob-cpp.git' , :using => :git, :branch => 'maverick-support'
-  version '0.3.2~rc1'
+  url 'https://ponyo.epfl.ch/gitlab/core/biorob-cpp.git' , :using => :git, :tag => 'v0.3.2'
+  version '0.3.2'
 
   option :universal
 
