@@ -4,7 +4,8 @@ require 'formula'
 class Libwebots < Formula
 	version '0.3.0'
 	homepage 'https://ponyo.epfl.ch/gitlab/webots/libwebots'
-	url 'https://ponyo.epfl.ch/gitlab/webots/libwebots.git', :using => :git	, :commit => '9dbb7dc903ed9973faceb3dbce4f20a1eb2ab371'
+	url 'https://ponyo.epfl.ch/gitlab/webots/libwebots.git', :using => :git
+	#, :commit => '9dbb7dc903ed9973faceb3dbce4f20a1eb2ab371'
 	head 'https://ponyo.epfl.ch/gitlab/webots/libwebots.git', :using => :git
 
 	option :universal
@@ -45,9 +46,11 @@ EOS
 
 	def install
 		test_webots_presence
+		# required due to otherwise failing FindWebots.cmake in biorob-cmake-utils
+		opoo "FIX-ME: Assuming Default Webots installation directory: /Applications/Webots"
 		ENV.universal_binary if build.universal?
 
-		system "cmake", ".", *std_cmake_args
+		system "cmake", ".","-DWEBOTS_ROOT_DIR=/Applications", *std_cmake_args
 		system "make install"
 	end
 
